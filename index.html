@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1a41da7cb1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css" class="rel">
+    <title>My Task List</title>
+</head>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center"><i class="far fa-list-alt text-primary"></i> My <span class ="text-primary">Task</span> List</h1>
+            <form id = "task-form">
+                <div class="form-group">
+                    <label for="task">Task:</label>
+                    <input type ="text" id ="task" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type ="text" id ="time" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type ="text" id ="date" class="form-control">
+                </div>
+                <input type="submit" value="Add Task" class="btn btn-primary btn-block">
+            </form>
+
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Time</th>
+                        <th>Date</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="task-list"></tbody>
+            </table>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
